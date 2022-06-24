@@ -5,7 +5,10 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "start": "node src/server"
+    "start": "node server/server",
+    "restart": "tsc && node server/server",
+    "build": "tsc",
+    "dev": "tsc -w"
   },
   "author": "Andrey Voronin",
   "license": "ISC",
@@ -14,5 +17,8 @@
     "express": "^4.17.1",
     "multer": "^1.4.3",
     "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
   }
 }

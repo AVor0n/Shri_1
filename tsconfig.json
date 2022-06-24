@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "strict": false,
+        "outDir": "./dist"
+    },
+    "files": [
+        "dist/script.ts"
+    ],
+}
