@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="form">
+        <input class="image-field" type="file"/>
+        <label> id <input class="id-field" type="text"/></label>
+        <div class="controls">
+          <button class="upload-image" disabled>Загрузить изображение на сервер</button>
+          <button class="get-list">Получить список id доступных изображений</button>
+          <button class="get-image" disabled>Получить изображение по id</button>
+          <button class="delete-image" disabled>Удалить изображение по id</button>
+        </div>
+        <input class="background-field" type="text">
+        <input class="color-field" type="color">
+        <button class="merge">Заменить фон</button>
+      </div>
+      <div class="preview">
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
