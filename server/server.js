@@ -13,7 +13,7 @@ app.get('/image/:id', api.getImage);
 app.delete('/image/:id', api.deleteImage);
 
 app.get('*', (req, res) => {
-  const filename = req.url || 'index.html'
+  const filename = req.url.replace('/', '') || 'index.html'
   res.sendFile(path.join(distFolder, filename))
 })
 
