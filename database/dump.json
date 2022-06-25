@@ -1,0 +1,16 @@
+{
+	"idToImage": {
+		"b354d90b-cac9-4d00-952c-2b79af807611": {
+			"id": "b354d90b-cac9-4d00-952c-2b79af807611",
+			"size": 165933,
+			"createdAt": 1656195806686,
+			"mimetype": "image/jpeg"
+		},
+		"acdb5efe-c105-4541-8cd1-c8c3c445255b": {
+			"id": "acdb5efe-c105-4541-8cd1-c8c3c445255b",
+			"size": 240754,
+			"createdAt": 1656195813250,
+			"mimetype": "image/jpeg"
+		}
+	}
+}
