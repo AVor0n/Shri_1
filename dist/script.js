@@ -3,6 +3,7 @@ var idField = document.querySelector('.id-field');
 var imageField = document.querySelector('.image-field');
 var colorField = document.querySelector('.color-field');
 var backIdField = document.querySelector('.background-field');
+var threshholdField = document.querySelector('.threshhold-field');
 var mergeBtn = document.querySelector('.merge');
 var uploadBtn = document.querySelector('.upload-image');
 var getListBtn = document.querySelector('.get-list');
@@ -57,7 +58,8 @@ mergeBtn.addEventListener('click', function () {
         new URLSearchParams({
             front: idField.value,
             back: backIdField.value,
-            color: hexToRgb(colorField.value)
+            color: hexToRgb(colorField.value),
+            threshhold: threshholdField.value
         }))
         .then(function (response) { return response.blob(); })
         .then(function (imageData) {

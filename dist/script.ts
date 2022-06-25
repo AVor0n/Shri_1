@@ -4,6 +4,7 @@ const idField = document.querySelector<HTMLInputElement>('.id-field');
 const imageField = document.querySelector<HTMLInputElement>('.image-field');
 const colorField = document.querySelector<HTMLInputElement>('.color-field');
 const backIdField = document.querySelector<HTMLInputElement>('.background-field');
+const threshholdField = document.querySelector<HTMLInputElement>('.threshhold-field');
 
 const mergeBtn = document.querySelector<HTMLButtonElement>('.merge');
 const uploadBtn = document.querySelector<HTMLButtonElement>('.upload-image');
@@ -70,6 +71,7 @@ mergeBtn.addEventListener('click', () => {
         front: idField.value,
         back: backIdField.value,
         color: hexToRgb(colorField.value),
+        threshhold: threshholdField.value,
       }),
   )
     .then(response => response.blob())

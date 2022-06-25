@@ -11,15 +11,18 @@
     <div class="wrapper">
       <div class="form">
         <input class="image-field" type="file"/>
-        <label> id <input class="id-field" type="text"/></label>
+        <input class="id-field" type="text" placeholder="frontId"/>
         <div class="controls">
           <button class="upload-image" disabled>Загрузить изображение на сервер</button>
           <button class="get-list">Получить список id доступных изображений</button>
           <button class="get-image" disabled>Получить изображение по id</button>
           <button class="delete-image" disabled>Удалить изображение по id</button>
         </div>
-        <input class="background-field" type="text">
-        <input class="color-field" type="color">
+        <input class="background-field" type="text" placeholder="backId">
+        <div class="h-container">
+          <input class="color-field" type="color">
+          <input class="threshhold-field" type="text" placeholder="threshold">
+        </div>
         <button class="merge">Заменить фон</button>
       </div>
       <div class="preview">
